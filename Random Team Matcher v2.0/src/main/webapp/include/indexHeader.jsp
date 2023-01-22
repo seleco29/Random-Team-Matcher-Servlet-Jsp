@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%
+    if(request.getAttribute("title")==null){
+    	out.print("RTM-Home Page");
+    }else{
+    	out.print(request.getAttribute("title"));
+    }
+    
+    
+    %></title>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/indexStyle.css"> 
+   
+</head>
+<body>
+    <div class="container">
+        <header class="heading">Random Team Matcher</header>
+        <div class="myCard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myLeftCtn">
+                        <div class="box">
+                            <header class="boxHeader">Random Matcher</header>
+                            <p class="boxText">
+                            The random team matcher allows us to have random matches between two teams from a list of teams. <br/><br/>
+                       	<b>	How to use? </b><br/>
+                       	<ul class="list">
+                       	<li>	The number of teams for which we must find matches should be entered inside the team details</li>
+                       	<li>	 	Enter each team name</li>
+                       	<li>	Here you go !The answer is prompted to you</li>
+                       	</ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                       <header>Team Details</header>
+       					<!-- <form action="" class="myForm text-center">
+                            <label for="teamNumber" class="myInputLabel" >Enter the number of teams in total</label>
+                            <input type="text" class="myInput" name="teamNumber" placeholder="Total Teams" required>
+                        <br/>
+                        <input type="submit" class="submitBtn" value="Submit">
+                      </form>  -->
+					

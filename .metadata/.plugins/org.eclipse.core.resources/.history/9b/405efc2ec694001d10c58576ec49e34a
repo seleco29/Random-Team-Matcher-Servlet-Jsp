@@ -1,0 +1,22 @@
+package com.seleco.bean;
+
+import java.util.ArrayList;
+import java.util.List;
+public class TeamModel {
+	TeamController tc=new TeamController();
+	List<String> list = new ArrayList<String>();
+    String test=null;
+	public void addTeam(String teamName) {
+
+		list.add(teamName);
+	}
+
+	public List<String> viewTeam() {
+
+		return list;
+
+	}
+	public void sendList() {
+		tc.getListFromModel(list);
+	}
+}

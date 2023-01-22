@@ -1,0 +1,5 @@
+package com.seleco.bean;
+
+public class TeamController {
+
+}

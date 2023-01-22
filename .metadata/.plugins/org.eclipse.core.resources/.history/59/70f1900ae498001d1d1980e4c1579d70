@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%-- <%@ include file="/include/header.jsp" %> --%>
+<%@ include file="/include/indexHeader.jsp" %>
+ <div class="container">
+        <header class="heading">Random Team Matcher</header>
+        <div class="myCard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myLeftCtn">
+                        <div class="box">
+                            <header class="boxHeader">Random Matcher</header>
+                            <p class="boxText">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                       <header>Team Details</header>
+<form action="<%=request.getContextPath()%>/home" method="get" class="myForm text-center">
+<label for="teamNumber" class="myInputLabel" >Enter the number of teams in total</label>
+<!-- Enter total number of teams : <input type="number" name="totalTeams" min="0"> -->
+<input type="number" class="myInput" name="totalTeams" placeholder="Total Teams" required min="0">
+<input type="hidden" name="action" value="enterTeamNames">
+<br/>
+<!-- <input type="submit" value="Submit"> -->
+<input type="submit" class="submitBtn" value="Submit">
+</form>
+<%-- <%@ include file="/include/footer.jsp"%> --%>
+<%@ include file="/include/indexFooter.jsp" %>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+ul{
+	color:#fff; 
+}
+.heading{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: -50px;
+    font-size: 45px;
+    border-radius: 25px;
+    background-image:linear-gradient(45deg,#FBD786,#f7797d) ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+}
+.container{
+    position: absolute;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.myLeftCtn{
+    position: relative;
+    background-image: linear-gradient(45deg,#FBD786,#f7797d);
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myRightCtn{
+    position: relative;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 100%;
+    padding: 25px;
+    padding-left: 50px;
+}
+.boxHeader{
+    font-size: 35px;
+    color: #fff;
+}
+.boxText{
+color: #fff;
+}
+.row{
+    height: 100%;
+}
+.myCard{
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+}
+.myRightCtn header{
+ padding-top: 50px;
+font-weight: 100;
+font-size: 35px;
+}
+.myInput{
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    padding: 5px 25px 5px 25px;
+    background-color: #ede6e6;
+    color: #000000;
+    display: flex;
+    align-content: flex-start;
+    
+}
+.myInput:focus{
+    outline: none;
+}
+
+.myInputLabel{
+    display: flex;
+    align-content: flex-start;
+    padding-bottom: 10px;
+    margin-top: 25%;
+    font-weight: 500;
+
+}
+.submitBtn{
+    width: 150px;
+    border-radius: 25px;
+    margin-left: -40px;
+    color: #fff;
+    background-image: linear-gradient(45deg,#FBD786,#f7797d);
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

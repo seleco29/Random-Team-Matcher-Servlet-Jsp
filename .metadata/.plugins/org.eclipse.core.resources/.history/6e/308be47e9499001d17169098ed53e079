@@ -1,0 +1,10 @@
+
+              <form action="" class="formClass">
+                <ul class="list">
+                  <li class="listElment"><input class="input" type="text" placeholder="Team Name" /></li>
+                  <li class="listElment"><input class="input" type="text" placeholder="Team Name" /></li>
+                </ul>
+
+                <input type="submit" class="submitBtn" value="Submit" />
+                </form>
+       

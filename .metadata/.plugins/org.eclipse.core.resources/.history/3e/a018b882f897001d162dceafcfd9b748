@@ -1,0 +1,5 @@
+package com.seleco.model;
+
+public class TeamNameModel {
+
+}

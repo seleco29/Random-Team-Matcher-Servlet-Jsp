@@ -1,0 +1,52 @@
+package com.seleco.model;
+
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
+import com.seleco.entity.TeamName;
+
+public class TeamNameModel {
+	List<TeamName> recivedList = new LinkedList<>();
+	List<TeamName> returnList = new LinkedList<TeamName>();
+	List<String> finalList=new LinkedList<>();
+
+	public List<String> teamLogic(String[] list) {
+
+		for (int i = 0; i < list.length; i++) {
+			recivedList.add(new TeamName(list[i]));
+		}
+		
+		Random random = new Random();
+		
+	while (recivedList.size() != 0) 
+		{
+			int randomValue = random.nextInt(recivedList.size());
+			returnList.add(recivedList.get(randomValue));
+			recivedList.remove(recivedList.get(randomValue));	
+		}
+	
+	if (returnList.size() % 2 == 0) {
+		for (int i = 0; i < returnList.size(); i = i + 2) {
+			//System.out.println(list.get(i) + " Vs " + list.get(i + 1));
+			finalList.add(returnList.get(i)+" Vs "+returnList.get(i+1));
+		}
+	}else {
+		int j = 0;
+		for (int i = 0; i < returnList.size(); i = j) {
+			if (j < returnList.size() - 1) {
+				j = j + 2;
+				//System.out.println(list.get(i) + " Vs " + list.get(i + 1));
+				finalList.add(returnList.get(i)+" Vs "+returnList.get(i+1));
+			} else {
+				//System.out.println(list.get(i) + " gets walk over");
+				finalList.add(returnList.get(i)+ "gets walk over!");
+				break;
+			}
+
+		}
+	}
+		return finalList;
+	}
+}

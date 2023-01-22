@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/indexStyle.css"> 
+   
+</head>
+<body>
+    <div class="container">
+        <header class="heading">Random Team Matcher</header>
+        <div class="myCard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myLeftCtn">
+                        <div class="box">
+                            <header class="boxHeader">Random Matcher</header>
+                            <p class="boxText">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                       <header>Team Details</header>
+                  <form action="" class="myForm text-center">
+                            <label for="teamNumber" class="myInputLabel" >Enter the number of teams in total</label>
+                            <input type="text" class="myInput" name="teamNumber" placeholder="Total Teams" required>
+                        <br/>
+                        <input type="submit" class="submitBtn" value="Submit">
+                      </form>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

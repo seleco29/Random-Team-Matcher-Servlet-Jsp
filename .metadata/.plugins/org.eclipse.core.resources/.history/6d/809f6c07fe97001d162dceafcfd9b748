@@ -1,0 +1,27 @@
+package com.seleco.model;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
+import com.seleco.entity.TeamName;
+
+public class TeamNameModel {
+	public TeamNameModel() {
+		// TODO Auto-generated constructor stub
+		List<TeamName> recivedList;
+		List<TeamName> returnList=new LinkedList<TeamName>();
+	}
+	
+	public List<TeamName> teamLogic(List<TeamName> list) {
+		this.recivedList=list;
+		Random random=new Random();
+		while (recivedList.size() != 0) {
+			int randomValue = random.nextInt(recivedList.size());
+			returnList.add(recivedList.get(randomValue));
+			list.remove(returnList.get(randomValue));
+		}
+		
+		return returnList;
+	}
+}

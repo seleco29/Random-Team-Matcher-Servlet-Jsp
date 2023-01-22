@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+S:\UdemyJava\try\RandomTeamMatcherServletAndJSP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2669893535.index
+3109606890.index
+2914423856.index
+2245468139.index
+3738510388.index
+4247311774.index
+1864894067.index
+3584151889.index
